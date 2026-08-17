@@ -1,0 +1,51 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+
+# Logs and scheduler output
+*.log
+nohup.out
+slurm-*.out
+slurm-*.err
+
+# Generated simulation and HPC artifacts
+results/
+outputs/
+hpc_runs/
+checkpoints/
+progress/
+profiles/
+benchmarks/
+*.checkpoint
+*.done.npy
+root_architecture_results*.csv
+*.metadata.json
+*.obj
+*.ply
+*.stl
+*.vtk
+*.vtp
+*.glb
+*.gltf
+*_renderer_*.html
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local demo video exports
+*.mov
+*.mp4
+*.m4v
