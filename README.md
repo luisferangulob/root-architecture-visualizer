@@ -15,14 +15,28 @@ An interactive scientific-computing application for configuring, running, compar
 
 ## Screenshots
 
-Screenshots and demonstrations will be added here.
+### Interactive Root Architecture Viewer
+
+![Interactive root architecture visualizer](assets/screenshots/root-architecture-view-2.png)
+
+### Root Architecture Visualization
+
+![3D root architecture visualization](assets/screenshots/root-architecture-view-3.png)
+
+### Detailed Architecture View
+
+<p align="center">
+  <img src="assets/screenshots/root-architecture-view-1.png"
+       alt="Detailed root architecture visualization"
+       width="55%">
+</p>
 
 ## Installation
 
 The validated release environment uses Python 3.14.5. Exact package versions from that environment are recorded in `requirements.txt`; test-only dependencies are recorded in `requirements-dev.txt`.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/luisferangulob/root-architecture-visualizer.git
 cd root-architecture-visualizer
 
 python3 -m venv .venv
@@ -78,7 +92,7 @@ The included partition names and X-disk convention are site-oriented defaults. T
 
 ## Relationship to the Simulation Engine
 
-The visualizer loads `single_root_sim.py` directly; it does not reimplement the model. The bundled copy allows a standalone checkout, while the companion `3d-root-architecture-simulator` repository remains the authoritative simulation and scientific-regression project.
+The visualizer loads `single_root_sim.py` directly; it does not reimplement the model. The bundled copy allows a standalone checkout, while the companion [`3d-root-architecture-simulator`](https://github.com/luisferangulob/3d-root-architecture-simulator) repository remains the authoritative simulation and scientific-regression project.
 
 Scientific assumptions and numerical behavior are documented in [docs/model_design.md](docs/model_design.md). Updates to the bundled engine should come from a reviewed simulator release and should be validated in both repositories.
 
@@ -97,6 +111,11 @@ The suite covers application controls, renderer/source contracts, physical taper
 
 ```text
 root-architecture-visualizer/
+├── assets/
+│   └── screenshots/
+│       ├── root-architecture-view-1.png
+│       ├── root-architecture-view-2.png
+│       └── root-architecture-view-3.png
 ├── docs/
 │   └── model_design.md
 ├── tests/
@@ -137,7 +156,7 @@ root-architecture-visualizer/
 - Browser rendering cost grows with architecture size and mesh detail.
 - HPC features require Slurm and cluster-specific configuration.
 - The application is coupled to the bundled schema-v26 result contract.
-- Screenshots and a hosted demonstration are not yet included.
+- A live hosted deployment is not included.
 
 ## Research Context
 
