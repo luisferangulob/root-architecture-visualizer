@@ -2,6 +2,12 @@
 
 An interactive scientific-computing application for configuring, running, comparing, and inspecting reproducible 3D root-architecture simulations. The Streamlit interface connects a deterministic simulation engine to Plotly-based 3D rendering, quantitative summaries, scientific diagnostics, and optional Slurm/HPC execution.
 
+## 4K Application Demo
+
+[**Watch or download the Root Architecture Visualizer demo**](https://github.com/luisferangulob/root-architecture-visualizer/releases/tag/v1.0-demo)
+
+The demonstration shows the five-replicate workflow, configurable simulation parameters, interactive 3D architecture rendering, replicate comparison, and scientific diagnostics.
+
 ## Application Capabilities
 
 - Configure developmental duration, elongation, branching, rainfall, thickness, resources, and safety limits.
